@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head> 
-
+        <link rel="stylesheet" href="style.css" />
     </head>
+
     <body>
         <h1>
             Sup!
@@ -10,7 +11,69 @@
         <p>
             I plan to put all my works in this space, bird photos, crafts, doodles, ect. :D
         </p>
+          <button onclick="myFunction()">Who are crows' mortal enemy?</button>
+          <p id="demo"></p>
+          <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Owls (they sometimes eat crow babies D:)";
+            }
+          </script>
+        <p> Fun fact ^ </p>
+        </body>
+        <body>
+           <div>
+        <h2>
+            Bird drawings/photos
+        </h2>
         <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0u0wPKUImER9hFuIJI41M04WuJdivczG4MShn5aSuFK1n8M0oeXYUqOg:https://www.allaboutbirds.org/guide/assets/photo/611135886-480px.jpg&s=10" alt="">
+            src="IMG_1435.jpeg">
+        <img
+            src="IMG_1218.jpeg">
+        </div>
+            <div class="container2">
+            <h2>
+                onenote doodles
+            </h2>
+            <img
+                src="femtanyl1.png">
+            <img   
+                src="uzi.png">
+            <img
+                src="skywarp.png">
+            </div>
+        <div>
+            <h2>sketchbook</h2>
+            <img
+                src="entity.jpeg">
+            <img
+                src="tfoc.jpeg">
+        </div>
+
+    <!-- animation attempt-->
+        <script>
+            var images = new Array
+            images = [
+                "frame 1.jpeg",
+                "frame 2.jpeg"
+            ];
+            setInterval("Animate()", 400);
+            var x = 0;
+
+            function Animate() {
+                document.getElementById("img").src = images[x]
+                x++;
+                if (images.length == x) {
+                    x = 0;
+                }
+            }
+        </script>
+        <div Class="person">
+            <img id="img" src="frame 1.jpeg">
+            
+            <h3>
+                Your guide
+            </h3>
+        </div>
+        
     </body>
 </html>
